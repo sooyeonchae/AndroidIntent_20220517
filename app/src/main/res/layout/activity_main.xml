@@ -5,15 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtPhoneNum"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:hint="연결할 전화번호를 입력하세요."
+        android:inputType="phone"/>
+    <Button
+        android:id="@+id/btnDial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화 걸기(DIAL)"/>
 </LinearLayout>
